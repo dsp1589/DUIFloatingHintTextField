@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dcb-EW-JQb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DUIFloatingHintTextFieldDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pny-Jj-sie" customClass="DUIFloatingHintTextField" customModule="DUIFloatingHintTextFieldDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="308" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CXy-pY-HAz"/>
+                                </constraints>
+                                <color key="textColor" red="0.27450980390000002" green="0.35294117650000001" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kPM-bd-dk4" customClass="DUIFloatingHintTextField" customModule="DUIFloatingHintTextFieldDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="366" width="375" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="AYZ-19-zk6"/>
+                                </constraints>
+                                <color key="textColor" red="0.090196078430000007" green="0.81960784310000001" blue="0.63921568630000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pny-Jj-sie" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CsP-sX-x01"/>
+                            <constraint firstItem="Pny-Jj-sie" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L54-NW-y4U"/>
+                            <constraint firstItem="kPM-bd-dk4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ytb-yq-uF6"/>
+                            <constraint firstItem="Pny-Jj-sie" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="ZZh-hW-Erp"/>
+                            <constraint firstItem="Pny-Jj-sie" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="a0a-OA-6M3"/>
+                            <constraint firstAttribute="trailing" secondItem="kPM-bd-dk4" secondAttribute="trailing" id="fVB-R1-IzG"/>
+                            <constraint firstItem="kPM-bd-dk4" firstAttribute="top" secondItem="Pny-Jj-sie" secondAttribute="bottom" constant="8" id="vGW-JM-Zh4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="fDL-YJ-Iyf">
+            <objects>
+                <tableViewController automaticallyAdjustsScrollViewInsets="NO" id="dcb-EW-JQb" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="EKg-tX-sKo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="5lu-yO-9RL">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Ilg-4G-OV1">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ilg-4G-OV1" id="8Te-PW-Zf4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="DSP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kQd-Rz-cy0" customClass="DUIFloatingHintTextField" customModule="DUIFloatingHintTextFieldDemo" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="kQd-Rz-cy0" secondAttribute="trailing" id="Bk2-tP-xQw"/>
+                                                <constraint firstItem="kQd-Rz-cy0" firstAttribute="top" secondItem="8Te-PW-Zf4" secondAttribute="top" id="FrS-6y-k9H"/>
+                                                <constraint firstItem="kQd-Rz-cy0" firstAttribute="leading" secondItem="8Te-PW-Zf4" secondAttribute="leading" id="VcY-qo-9Ro"/>
+                                                <constraint firstAttribute="bottom" secondItem="kQd-Rz-cy0" secondAttribute="bottom" id="ek1-MU-tKZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="NuE-o8-1mB">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NuE-o8-1mB" id="ce2-Rs-H1f">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sparta" placeholder="Tesla" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y1C-CK-xYP" customClass="DUIFloatingHintTextField" customModule="DUIFloatingHintTextFieldDemo" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="60"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="y1C-CK-xYP" secondAttribute="trailing" id="0Df-z5-Qpe"/>
+                                                <constraint firstItem="y1C-CK-xYP" firstAttribute="leading" secondItem="ce2-Rs-H1f" secondAttribute="leading" id="SWi-MK-53z"/>
+                                                <constraint firstItem="y1C-CK-xYP" firstAttribute="top" secondItem="ce2-Rs-H1f" secondAttribute="top" id="XUB-QV-SdC"/>
+                                                <constraint firstAttribute="bottom" secondItem="y1C-CK-xYP" secondAttribute="bottom" id="yle-za-WmM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="dcb-EW-JQb" id="5KT-a1-vZO"/>
+                            <outlet property="delegate" destination="dcb-EW-JQb" id="fSv-u8-eVW"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H2c-AK-D9T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847" y="409"/>
+        </scene>
+    </scenes>
+</document>
